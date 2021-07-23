@@ -1,12 +1,16 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import "@fontsource/lexend/latin.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
 
 import Layout from "@/components/layout";
 
 import customTheme from "@/styles/customTheme";
-import "styles/globals.css";
+import "@/styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Flex, HStack } from "@chakra-ui/react";
+import { Box, Container, Divider, Flex, HStack, Image } from "@chakra-ui/react";
 import React from "react";
 
 const Client = () => {
@@ -10,11 +10,12 @@ const Client = () => {
           h="1px"
         />
         <HStack spacing="64px" mx="auto" py="16px" my="25px">
-          <Box>Amazon</Box>
-          <Box>Amazon</Box>
-          <Box>Amazon</Box>
-          <Box>Amazon</Box>
-          <Box>Amazon</Box>
+          <Image src="/client/airbnb-logo.svg" alt="Logo Airbnb" h="24px" />
+          <Image src="/client/fedEx-logo.svg" alt="Logo Airbnb" h="24px" />
+          <Image src="/client/google-logo.svg" alt="Logo Airbnb" h="24px" />
+          <Image src="/client/hubspot-logo.svg" alt="Logo Airbnb" h="24px" />
+          <Image src="/client/microsoft-logo.svg" alt="Logo Airbnb" h="24px" />
+          <Image src="/client/walmart-logo.svg" alt="Logo Airbnb" h="24px" />
         </HStack>
         <Divider
           background="linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%)"

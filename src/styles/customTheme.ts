@@ -3,8 +3,8 @@ import { theme, extendTheme } from "@chakra-ui/react";
 const customTheme = extendTheme({
   fonts: {
     ...theme.fonts,
-    body: "Lexend, sans-serif",
-    heading: "Lexend, serif",
+    body: "Inter, sans-serif",
+    heading: "Inter, serif",
   },
   colors: {
     ...theme.colors,
@@ -36,6 +36,14 @@ const customTheme = extendTheme({
     //     borderRadius: 24,
     //   },
     // },
+    Grid: {
+      variants: {
+        "grid-12": {
+          templateColumns: "repeat(12,1fr)",
+          gap: "30px",
+        },
+      },
+    },
     Heading: {
       variants: {
         "heading-one": {
@@ -44,13 +52,46 @@ const customTheme = extendTheme({
           lineHeight: "98px",
           color: "grey.900",
         },
+        "heading-two": {
+          fontWeight: "800",
+          fontSize: "48px",
+          lineHeight: "64px",
+        },
+        "heading-three": {
+          fontWeight: "800",
+          fontSize: "40px",
+          lineHeight: "54px",
+        },
+        "heading-four": {
+          fontWeight: "700",
+          fontSize: "28px",
+          lineHeight: "40px",
+        },
+        "heading-five": {
+          fontWeight: "600",
+          fontSize: "24px",
+          lineHeight: "32px",
+        },
       },
     },
     Text: {
       variants: {
         "lead-one": {
-          fontSize: "180x",
+          fontSize: "18px",
           lineHeight: "32px",
+        },
+        "lead-two": {
+          fontSize: "14px",
+          lineHeight: "24px",
+        },
+        "body-one": {
+          fontSize: "16px",
+          lineHeight: "26px",
+        },
+        "subtitle-one": {
+          fontSize: "18px",
+          lineHeight: "28px",
+          fontWeight: "700",
         },
       },
     },
